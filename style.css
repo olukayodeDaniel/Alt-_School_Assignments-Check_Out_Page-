@@ -1,0 +1,469 @@
+/* variable declarations */
+:root {
+    --font-color: #1d2c3c;
+  }
+  
+  /* css reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  /* * {
+    margin: 0;
+  } */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Lato", sans-serif, "Roboto Condensed", sans-serif;
+    background: #f5f8fa;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  #root,
+  #__next {
+    isolation: isolate;
+  }
+  
+  /* header / nav-bar styling */
+  
+  #header {
+    margin: 28px, 40px 30px 40px;
+    border-bottom: 2px solid #e0e6ea;
+  }
+  .navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar img {
+    width: 200px;
+    height: 39px;
+  }
+  header .navbar ul {
+    width: 476px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+  
+    font-size: 14px;
+  }
+  
+  header a {
+    color: var(--font-color);
+    text-decoration: none;
+  }
+  .navbar button,
+  select {
+    height: 40px;
+    width: 91px;
+    background-color: #fff;
+    border: 2px solid #646e7a;
+    border-radius: 6px;
+  }
+  
+  .small-button {
+    display: none;
+  }
+  
+  /* main content styling */
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  #mainContent {
+    width: 892px;
+    height: 795px;
+    border-radius: 6px;
+    background: #1179bf;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+      0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+    margin-top: 80px;
+    display: flex;
+  }
+  
+  .checkoutContainer {
+    width: 580px;
+    height: 795px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .checkoutContainer h1 {
+    margin: 0px;
+    padding: 0%;
+    color: --font-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 2px solid #f5f7fa;
+    padding: 32px 32px 32px 48px;
+  }
+  
+  .freelancerContainer {
+    width: 312px;
+    height: 795px;
+    border-radius: 0px 6px 6px 0px;
+  }
+  article {
+    padding: 32px 32px 40px 48px;
+    border-bottom: 2px solid #f5f7fa;
+  }
+  .checkoutContainer legend {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  article label {
+    display: block;
+  }
+  article .div {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  [type="text"] {
+    width: 227px;
+    height: 36px;
+    border-radius: 4px;
+    background: #edeff2;
+    border: 0ch;
+  }
+  
+  label {
+    color: var(--font-color);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  [type="email"] {
+    width: 370px;
+    height: 36px;
+    border-radius: 5px;
+    background: #edeff2;
+    border: 0ch;
+  }
+  
+  input::placeholder {
+    position: relative; /* Set relative positioning */
+    left: 20px; /* Shift placeholder 10 pixels to the right */
+  }
+  
+  [type="number"] {
+    width: 483px;
+    height: 36px;
+    border-radius: 5px;
+    background: #edeff2;
+    border: 0ch;
+  }
+  [for="creditCard"] {
+    margin-top: 20px;
+  }
+  form button {
+    width: 483px;
+    height: 52px;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 5px;
+    background: #038e7d;
+    margin: 32px 32px 16px 48px;
+    border: 0px;
+  }
+  
+  form p {
+    color: #1d2c3c;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  form p span {
+    color: #646e7a;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .questionMarkSVG {
+    margin-top: 13px;
+  }
+  
+  .supportContainer {
+    display: flex;
+    align-items: self-start;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form img {
+    margin-top: 24px;
+  }
+  
+  /* styling for freelance  section*/
+  .free {
+    margin: 41px 0px 0px 46px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .price {
+    position: relative;
+    bottom: 15px;
+    margin: 0px 0px 0px 46px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .price sup,
+  .price span {
+    color: #fff;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0%;
+  }
+  
+  .para {
+    position: relative;
+    bottom: 15px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.008px;
+    margin: 0px 0px 0px 46px;
+  }
+  .checkbox input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+  }
+  
+  /* Define the round shape */
+  .checkbox input::before {
+    content: "";
+    display: inline-block;
+    width: 16px; /* Adjust the size of the checkbox */
+    height: 16px; /* Adjust the size of the checkbox */
+    border: 1px solid #fff; /* Border color of the checkbox */
+    border-radius: 50%; /* Make it round */
+    margin-right: 8px; /* Add some spacing between the checkbox and the label text */
+  }
+  .checkbox input:checked::before {
+    content: "\2713"; /* Unicode checkmark character */
+    font-size: 12px;
+    line-height: 16px; /* Match the height of the checkbox */
+    text-align: center;
+    color: #fff;
+  
+    border: 1px solid #fff; /* Hide the border when checked */
+  }
+  .checkboxList li {
+    list-style: none;
+  }
+  .checkbox {
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.008px;
+  }
+  .checkbox span {
+    font-weight: 700;
+  }
+  .para2 {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.008px;
+    margin: 32px 0px 0px 46px;
+  }
+  .para2 a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .para2 span {
+    font-weight: 700;
+  }
+  .para3 {
+    color: #fff;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+  }
+  .para3 span {
+    font-weight: 700;
+  }
+  
+  .comment {
+    border-top: 2px solid #ffffff20;
+    width: 231px;
+    margin: 32px 0px 0px 46px;
+    padding-top: 41px;
+  }
+  figure {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  figure img {
+    border-radius: 50%;
+  }
+  figcaption {
+    color: #fff;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  /* footer styling */
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer p {
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  footer a {
+    text-decoration: none;
+    color: #636b6f;
+  }
+  
+  footer p span {
+    color: #31708f;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .small-form {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .navbar {
+      /* display:inline; */
+      justify-content: space-between;
+    }
+    .navbar img {
+      display: center;
+    }
+    .navbar ul li {
+      display: none;
+    }
+    .small-button {
+      display: inline;
+    }
+  
+    #mainContent {
+      width: 350px;
+      margin-top: 0;
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+        0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+      border-radius: 0 0 6px 6px;
+      height: fit-content;
+      padding-bottom: 32px;
+    }
+    .checkoutContainer {
+      display: none;
+    }
+    .small-form {
+      display: block;
+      width: 350px;
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+        0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+      background-color: #fff;
+      padding: 8px 16px 16px 0px;
+      margin-top: 60px;
+      margin-bottom: 0%;
+      border-radius: 6px 6px 0px 0px;
+    }
+    article .div {
+      display: block;
+    }
+    legend {
+      display: flex;
+    }
+    [type="email"],
+    [type="number"],
+    form button {
+      width: 227px;
+    }
+    .checkout-text {
+      margin: 0px 0px 16px 36px;
+    }
+    .small-legend {
+      margin-top: 0px;
+      gap: 8px;
+    }
+    .small-form-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
